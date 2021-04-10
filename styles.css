@@ -15,6 +15,13 @@ div.nav-bar {
     background: #304353;
 }
 
+.menu-bar {
+    cursor: pointer;
+    position: relative;
+    top: 20px;
+    right: 30px;
+    z-index: 2;
+}
 div.logo {
     font-size: 1.5rem;
     color: #bcc3c7;
@@ -344,4 +351,177 @@ div.footer h6 {
     color: #88949B;
     font-size: 1rem;
     padding-top: 6rem;
+}
+/* small devices*/
+.menu-btn{
+    display:none;
+}
+#closeNav{
+    display:none;
+}
+/* small devices */
+@media(max-width: 769px)
+{
+    div.hero-section {
+        padding:10px;
+    }
+
+ div.logo {
+    font-size: 1.2rem;
+    padding-left: 2.5rem;
+    
+  }
+
+ ul.nav-links {
+    display:block;
+}
+
+.menu-btn,#closeNav{
+    display:block;
+}
+div.nav-bar {
+    padding-left: 0.7rem;
+    width: 99vw;    
+}
+
+ul li a:hover {
+    padding: 0.1rem;
+}
+
+ul li {
+    font-size: 0.9rem;
+    padding-bottom: 0.7rem;
+}
+
+div.hero-content-heading h3 {
+    font-size: 2rem;
+    text-transform: capitalize;
+    letter-spacing: 1px; 
+}
+
+div.hero-content-heading p {
+    padding-top: 0.5rem;
+    font-size: 1rem;
+    letter-spacing: 1px;  
+}
+
+div.hero-content-btn {
+    padding-top: 1rem;
+}
+
+div.hero-content-btn a {
+    
+    font-size: 0.7rem;
+}
+div.hero-background{
+    padding: 2rem;
+    display: block;
+}
+
+div.background {
+  padding: 10px 20px;
+    width: 500px;
+    height: 300px;
+}
+
+div.background h4 {
+    padding: 1.5rem;
+    font-size: 1rem;
+}
+
+div.background p {
+    padding: 2rem;
+    font-size: 0.8rem;
+}
+
+div.hero-background-pos {
+    position: absolute;
+    left: 100%;
+    width: 1px;
+}
+div.snapshot-team {
+    padding-top: 2rem;
+}
+
+div.snapshot-team h2 {
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    
+}
+
+div.snapshot-team p {
+    letter-spacing: 0.5px;
+}
+
+div.snapshot-box-content {
+    display: grid;
+    justify-content: space-between;
+}
+
+
+div.gallery-section {
+    padding: 2rem;
+}
+
+div.gallery-content h4 {
+    font-size: 1.2rem;
+}
+
+div.gallery-img {
+   display: grid;
+   padding-top: 2rem;
+}
+
+div.img img {
+    width: 230px;
+    height: 170px;
+}
+
+div.footer-input {
+    display: blockdocu;
+    justify-content: center;
+    align-items: center;
+    padding-top: 3rem;
+ }
+ 
+input[type="text"] {
+    margin-right: 5px;
+    padding: 5px 5px;
+    width: 15%;
+}
+
+input[type="email"] {
+    margin-right: 5px;
+    padding: 5px 5px;
+    width: 15%;
+}
+
+div.footer-textarea {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2rem;
+}
+
+textarea {
+    width: 46%;
+    height: 100px;
+    padding: 0.5rem;
+    outline: none;
+    border: 1px solid #bcc3c7;
+    background: transparent;
+    color: #f0f0f0;
+}
+
+div.footer-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2rem;
+}
+
+div.footer-btn a {
+    padding: 5px 30px;
+}
+
 }
